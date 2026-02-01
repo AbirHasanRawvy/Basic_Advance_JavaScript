@@ -11,4 +11,20 @@ function addParagraph(){
 
     console.log(para1);
 
+};
+
+function addItem(){
+    const input = document.getElementById('itemInput');
+
+    const newItem = document.createElement("li");
+
+    console.log(input.value);
+
+    newItem.textContent = input.value;
+
+    document.getElementById("itemList").appendChild(newItem);
+
+    input.value = " ";
+
+
 }
