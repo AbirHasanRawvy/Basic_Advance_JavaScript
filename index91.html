@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            /* background-color: red; */
+            margin-top: 10px;
+        }
+        .highlight {
+            background: red;
+            color: white;
+        }
+
+        #box1 {
+            width: 200px;
+            height: 100px;
+            /* background-color: red; */
+            margin-top: 10px;
+        }
+        .highlight1 {
+            background: red;
+            color: white;
+        }
+
+        /* #box2 {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            margin-top: 10px;
+        }
+        .highlight2 {
+            background: red;
+            color: white;
+        } */
+
+        #box3 {
+            width: 200px;
+            height: 100px;
+            /* background-color: red; */
+            margin-top: 10px;
+        }
+        .highlight3 {
+            background: red;
+            color: white;
+        }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+    
+
+    
+    
+
+    <!-- for toggle  -->
+     <button onclick="toggleHighlight()">Toggle Highlight</button>
+    <div id="box">This is the box.</div>
+    <script>
+        function toggleHighlight(){
+            let box = document.getElementById("box")
+
+            box.classList.toggle("highlight")
+        };
+
+       
+    </script>
+    <!-- for add  -->
+     <button onclick="toggleHighlight1()">Add Highlight1</button>
+    <div id="box1">This is the box.</div>
+    <script>
+         function toggleHighlight1(){
+            let box1 = document.getElementById("box1")
+
+            box1.classList.add("highlight1")
+        };
+    </script>
+    <!-- for remove  -->
+     <!-- <button onclick="toggleHighlight2()">Add highlight2</button>
+    <div id="box2" class="highlight2">This is the box.</div>
+     <script>
+         function toggleHighlight2(){
+            let box2 = document.getElementById("box2");
+
+            box2.classList.remove("highlight2");
+        };
+    </script> -->
+    <!-- for contain  -->
+     <button onclick="toggleHighlight3()">Add highlight2</button>
+    <div id="box3" class="toggleHighlight3">This is the box.</div>
+     <script>
+         function toggleHighlight2(){
+            let box3 = document.getElementById("box3");
+
+            console.log(box3.classList.contains.toggleHighlight3);
+
+            box3.classList.remove("highlight3");
+        };
+    </script>
+</body>
+</html>
