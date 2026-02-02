@@ -28,3 +28,19 @@ function addItem(){
 
 
 }
+
+function addItem1(){
+    const input1 = document.getElementById('itemInput');
+
+    const newItem1 = document.createElement("li");
+
+    console.log(input1.value);
+
+    newItem1.textContent = input1.value;
+
+    document.getElementById("itemList").append(newItem1);
+
+    input1.value = " ";
+
+
+}
