@@ -26,11 +26,33 @@ input.addEventListener("keyup", ()=>{
     output.innerText = input.value;
 });
 
-//keyUp;
+//keyDown;
 let input1 = document.getElementById('name1');
 let output1 = document.getElementById('output1');
 
 input1.addEventListener("keydown", ()=>{
     output1.innerText = input1.value;
+});
+
+//Form Event;
+//submit;
+const form = document.getElementById("myform");
+form.addEventListener("submit", (e) => {
+
+    e.preventDefault();//for not reloading the page;
+
+    alert("Success!!!");
+});
+
+//focus;
+const input2 = document.getElementById('myInput1');
+const message = document.getElementById('message');
+
+input2.addEventListener("focus", function(){
+    message.innerText="You focus input field.";
+    message.style.color="red";
+    message.style.background="green";
+    message.style.border="black";
+    message.style.animation="blue";
 });
 
