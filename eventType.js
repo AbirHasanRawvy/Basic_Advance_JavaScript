@@ -56,3 +56,14 @@ input2.addEventListener("focus", function(){
     message.style.animation="blue";
 });
 
+//blur;
+let emailInput = document.getElementById('email');
+let warning = document.getElementById('warning');
+
+emailInput.addEventListener("blur", function(){
+    if(emailInput.value.trim()===""){
+        warning.innerText = "Email is required."
+    }else{
+        warning.innerText="";
+    }
+});
