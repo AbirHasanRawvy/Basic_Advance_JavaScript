@@ -67,3 +67,11 @@ emailInput.addEventListener("blur", function(){
         warning.innerText="";
     }
 });
+
+//Change;
+let select = document.getElementById('color');
+let result = document.getElementById('result');
+
+select.addEventListener("change", function(){
+    result.innerText = select.value;
+});
