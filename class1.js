@@ -17,10 +17,11 @@ console.log(student.age);
 //Bracket notation;
 console.log(student["full name"]);
 
+//under object function;
 let calculator = {
     x: 10,
     y: 20,
-    add: function () {
+    add: function () {//when we are not mentioned parameter we must use this key word;
         return this.x + this.y; 
     },
     mul: function () {
@@ -29,3 +30,17 @@ let calculator = {
 };
 console.log(calculator.add());
 console.log(calculator.mul());
+
+//JSON:JavaScript Object Notation, JSON need when we intarect with database;
+let student1 = {
+    name: "Abir",
+    age: 20,
+    subjects: ["TOC","WebTec","AddWeb"],
+    "full name" : "Abir Hasan",
+};
+//step-1;
+let jsonString = JSON.stringify(student1);
+console.log(jsonString);
+//step-2;
+let parsedObject = JSON.parse(jsonString);
+console.log(parsedObject);
