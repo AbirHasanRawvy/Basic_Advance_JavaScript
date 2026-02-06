@@ -4,16 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        /* #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            margin-top: 10px;
+        }
+        .highlight {
+            background-color: red;
+            color: white;
+        } */
+    </style>
 </head>
 <body>
     <h1 id="title">Hello javaScript!</h1>
     <h1 id="title1">Hello javaScript!</h1>
+    <h1 id="heading">Welcome to JavaScript!</h1>
+    
+    <h2 class="heading_class">Welcome to coding.</h2>
+    <h2 class="heading_class1">Welcome to JS</h2>
+    <h2 class="heading_class1">Welcome to CSS</h2>
+    <h2 class="heading_class1">Welcome to Bootsrap</h2>
 
-    <script src="./DOM.js">
+    <p>Lorem ipsum dolor</p>
+    <p>Lorem ipsum dolor</p>
+    <p>Lorem ipsum dolor</p>
+    <p>Lorem ipsum dolor</p>
 
-        
-    </script>
+    <button id="btn_id">Click</button>
+    <button class="btn_class">Click</button>
+    <button>Click</button>
 
+    <!-- //Modify Element; -->
+    <div id="demo">
+        Hello <span style="display: none;">Hidden Text.</span>
+    </div>
+
+    <divn id="info">
+        This is visible <span style="display: none;">Hidden Text.</span>
+    </div>
+
+    <!-- for get set Attribute; -->
+    <a id="myLink" href="https://www.google.com/search?sca_esv=37b29cacd6547f1e&sxsrf=ANbL-n5eOg0wxhy7UgL7g-ORqG7ApjNKHw:1769879336938&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3ppPEReeCOS7s1VbbZz2TLtLg-3tySDopuaXFPmErWGpJ9LTMN9lrXFk0YqY5MzjNk2in5t9k2m64zq8huaOTkySRxrOBK38ET8JR9sr8iTG0pzJYiqMZXLE0c_eLfvxm_tRgYA5weS9z_YULLcwyC5oPXXgSe_hbpE4A1CJG2mldWJQ1w&q=switzerland&sa=X&ved=2ahUKEwjzpLGporaSAxVkR2wGHUl8JMYQtKgLegQIEBAB&biw=767&bih=695&dpr=1.25&aic=0#sv=CAMSVhoyKhBlLXowYm44aXZOd1VqRE1NMg56MGJuOGl2TndVakRNTToOQnl6VDR0UTE5S18xVk0gBCocCgZtb3NhaWMSEGUtejBibjhpdk53VWpETU0YADABGAcgup3yhw8wAkoKCAEQAhgCIAIoAg">Visit Google</a>
+
+    <img id="mainImage" src="https://www.elabedu.eu/blog/study-in-switzerland/" alt="Old Image">
+
+    <!-- addRemove class 
+    <button onclick="toggleHighlight()"></button>
+    <div id="box">This is box.</div> -->
+
+    <!-- change style and property  -->
+     <p id="myPara">I am student of Bangladesh.</p>
+     <button onclick = "changeStyle()">Style change.</button>
+
+     <!-- create new elwment  -->
+    <button onclick="addParagraph()">Add Paragraph.</button>
+    <div id="container"></div>
+
+    <input type="text" id="itemInput" placeholder="Add data">
+    <button onclick="addItem()">Add Item.</button>
+    
+
+    <div>
+        <ul id="itemList"></ul>
+    </div>
+
+    <input type="text" id="itemInput1" placeholder="Add data1">
+     <button onclick="addItem1()">Add Item1.</button>
+    <div>
+        <ul id="itemList1"></ul>
+    </div>
+    
+    <!-- REMOVE CHILD -->
+    <!-- for remove child method -->
+    <ul id="studentList">
+        <li>Abir Hasan.</li>
+        <li>Iftear Ratul.</li>
+        <li>Tahfim Ibn Khan.</li>
+    </ul>
+    <button onclick="removeItem()">Remove Item</button>
+
+    <!-- remove method -->
+    <ul id="studentList">
+        <li>Abir Hasan.</li>
+        <li id="iftear">Iftear Ratul.</li>
+        <li>Tahfim Ibn Khan.</li>
+    </ul>
+    <button onclick="removeItem1()">Remove Item</button>
+
+
+    <!-- Event Type  -->
+    <!-- Click  -->
+    <button onclick="alert('Hello')">Click Me</button>
+
+    <div id="box" style="width: 100px; height: 100px; background: red;"></div>
+
+    <!-- //keyUp; -->
+    <input type="text" id="name" placeholder="enter your name">
+    <p id="output"></p>
+
+     <!-- //keyDown; -->
+    <input type="text1" id="name1" placeholder="enter your name">
+    <p id="output1"></p>
+
+    <!-- form type  -->
+     <form id="myform">
+        <input type="text" id="username" placeholder="Username">
+        <button type="submit">Submit</button>
+     </form>
+
+     <!--for focus -->
+     <input type="text" id="myInput1" placeholder="Enter Data">
+     <p id="message"></p>
+
+     <!-- Blur -->
+      <input type="text" id="email" placeholder="Enter your email.">
+      <p id="warning" style="color: red;"></p>
+
+      <!-- //Change; -->
+       <label for="color">Choose a color</label>
+       <select id="color">
+        <option value="">Select Color.</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue.</option>
+       </select>
+
+       <!-- Input  -->
+    <input type="text" id="myInput2" placeholder="Click here">
+    <p id="result1"></p>
+
+    <!-- Window -->
+     <!-- Scroll -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptas voluptatibus libero nam repudiandae. Tempore minus, soluta quidem deserunt, deleniti in, optio autem fugiat est quisquam omnis. Cupiditate expedita harum error, reprehenderit enim ipsum omnis ipsam quo iste quaerat repellendus quis veritatis aut rem praesentium quasi temporibus dolores. Accusamus accusantium nesciunt, iusto, distinctio aliquam incidunt illo quibusdam eligendi omnis ratione quidem possimus odio dolore delectus explicabo aliquid officia eveniet in! Perspiciatis culpa ea a error, iste eum dolorum sint ullam earum quae, modi ipsam laboriosam obcaecati quo enim. Nesciunt, exercitationem cupiditate! Eos distinctio nemo, numquam nisi ratione ut ab adipisci vero libero perferendis deleniti impedit cumque rem beatae cupiditate provident, fugiat eum aut minus esse consequatur consequuntur iusto, labore magni. Laudantium distinctio, dicta repellat asperiores libero voluptates cupiditate deserunt nulla eos, sit necessitatibus quod. Consequuntur vitae labore blanditiis quam, quos consequatur commodi quidem. Et accusantium ut, debitis atque aperiam cumque corporis sint facilis expedita optio illum enim reprehenderit, velit rem quas dolor suscipit veritatis officia id similique hic quasi. Dolore distinctio accusamus esse nisi cupiditate ipsa excepturi eum perspiciatis alias fuga minus, maiores velit ratione sint voluptate veritatis laboriosam totam odio officia quas ducimus veniam enim quaerat! Ratione delectus cum possimus error voluptas! Aperiam, rem expedita quos voluptates eaque delectus voluptatum magnam pariatur quaerat, unde reprehenderit accusamus veritatis iste! Porro molestias harum beatae dolore. Harum, autem odio velit perferendis quasi cupiditate ex voluptates repudiandae quaerat dignissimos tempora, deleniti doloremque mollitia facilis dolor, eius explicabo dolores officia vero quia reprehenderit eum. Iusto eveniet similique officiis, illo nostrum dolore voluptatibus veniam sint tempore! Cupiditate aperiam, fuga asperiores molestiae quaerat ratione expedita blanditiis odit, accusantium obcaecati vitae quisquam? Amet, quisquam itaque. Facilis ea laborum aut voluptatibus earum ipsum laboriosam cum tenetur magnam alias, tempora illo minima adipisci? Consectetur mollitia reiciendis harum architecto maiores. Quia culpa itaque soluta, molestiae consequuntur debitis nostrum inventore quod ut placeat veritatis aliquid totam sunt natus saepe excepturi dolorem cupiditate a repellat? Officiis nobis accusantium consequuntur eaque hic dolore excepturi odit aut in? Sint hic voluptatum eligendi doloremque magni aliquam ipsa totam laboriosam animi explicabo consequuntur magnam corrupti neque aut beatae, temporibus omnis illo exercitationem labore culpa dolorum. Quidem excepturi adipisci totam nihil nobis voluptatem nesciunt reiciendis recusandae at cum quam incidunt facilis velit amet, impedit alias optio aspernatur aliquid mollitia nam quas id maxime molestias? Quas sunt eos aut mollitia ut architecto itaque accusantium natus ad. Dolores tenetur ut, exercitationem amet iusto optio consequuntur dicta eveniet ea delectus dolorum impedit eum iure odit, quod at ipsam sint accusantium. Quasi at magni ducimus, quisquam ex ipsa perspiciatis non numquam ullam voluptate illo nesciunt vero consequatur expedita earum distinctio rem nisi, facilis minus cum fugiat aperiam veniam. Autem animi magni natus cum vitae aut reprehenderit itaque, ipsa delectus. Saepe sed tenetur facilis, doloremque, dignissimos excepturi pariatur sunt porro laudantium laboriosam rerum suscipit repudiandae reprehenderit a earum ullam eaque, consectetur illum ipsam voluptates quaerat accusamus dolore repellat velit. Debitis optio aut nemo, atque qui nihil illum, culpa quo facere enim eius laboriosam sed. Sapiente distinctio dolorum molestiae possimus similique, fugit consequuntur dolor aliquam nulla corrupti quae laboriosam commodi quo veniam iste vero, cumque est nesciunt excepturi tenetur optio delectus esse reiciendis. Error nisi quia possimus itaque quae. Necessitatibus eveniet quo rem magnam dolore sequi nesciunt incidunt eius ea vitae quam totam, aperiam quisquam excepturi maxime? Aliquam voluptas suscipit dolorem ab error nihil ea? Vero incidunt voluptates laudantium? Nisi voluptatem saepe ipsum veritatis ad itaque perspiciatis, autem fugit ipsam veniam dolore temporibus quis exercitationem amet earum dolorum molestias repellat voluptatibus voluptates non eligendi aut. Eius excepturi, delectus unde commodi porro vero illum amet hic doloribus est, tenetur, molestias dolor earum quidem omnis nesciunt. Suscipit ab exercitationem iusto accusantium eligendi facere, nemo aut! Accusantium consequuntur sed dolore iusto aperiam hic quod mollitia maiores voluptate, molestias quam ipsam voluptatem adipisci, reprehenderit fuga facilis odit quia natus atque asperiores, soluta delectus! Distinctio consequatur, molestias excepturi, et temporibus veniam eveniet provident accusantium soluta repudiandae vitae adipisci doloribus facilis impedit optio itaque numquam alias eligendi, voluptatum tempore dolor laudantium. Molestias consequuntur consequatur quis dolores nostrum perspiciatis quasi illum iste harum ipsum aliquid illo odio fugit deserunt ipsam, a accusantium doloremque labore quaerat? Similique facilis illum illo laudantium, nobis iure nulla architecto, repellendus alias consequuntur possimus. Consequatur nam iusto nobis, nostrum perspiciatis in incidunt, dolorum recusandae, nesciunt minima distinctio sed aut ipsum quo maxime et dicta doloremque illum aliquid? Illo repudiandae enim, quas, magni voluptatum reiciendis eveniet, dolores iure expedita facere exercitationem doloremque! Minima, veritatis nesciunt. Dolorem accusantium consequuntur eligendi similique cum et consectetur numquam eos, autem fugiat eaque quae, voluptate tempora hic iusto! Alias similique, vero exercitationem itaque ducimus porro eligendi recusandae non eius dolor rerum nostrum in, numquam quam praesentium sint ipsam dolores. Dolore perspiciatis hic eveniet iusto libero recusandae vero eaque magni quidem, saepe dolor exercitationem repellendus praesentium eum eligendi, magnam ipsum quo cumque? Deleniti accusamus quasi veniam fugit commodi, in ipsa, architecto praesentium quam eligendi vero dicta? Eos provident adipisci totam, itaque inventore iure molestias, iste, rem animi doloribus tempore alias quos neque cupiditate necessitatibus natus? Perspiciatis iure magnam iste atque adipisci quis debitis exercitationem necessitatibus repellendus harum sint deserunt ipsam asperiores architecto explicabo, commodi doloremque ab? Fugiat veniam beatae vel architecto fugit ipsum repudiandae harum? Reiciendis, quam et! Dolorem unde molestiae recusandae accusantium iste? Doloribus iste at minus temporibus laborum non eaque accusamus nisi? Aliquid aut magnam, excepturi nulla velit quia necessitatibus atque porro nemo inventore saepe corrupti nihil explicabo. Rem inventore facere omnis praesentium odit tenetur, quia assumenda id mollitia architecto blanditiis! Amet beatae exercitationem vero, dolorum nihil tenetur eius facere illum fugiat dolores, doloribus perspiciatis optio aut officia nostrum, omnis itaque natus explicabo necessitatibus maiores eveniet neque. Facere odio magnam esse fuga at? Atque obcaecati ad temporibus optio minima maiores aperiam voluptatum sed totam iusto quisquam expedita dolorem nesciunt non necessitatibus iste dignissimos soluta, quia voluptates impedit? Ducimus repellendus perferendis sint, unde non sunt voluptatum explicabo velit provident iste esse modi corrupti aliquid maxime commodi! Quasi amet iste nostrum eligendi quia!</p>
+
+    <!-- //Event Type & ysrget object; -->
+    <button id="myBtn">Click me</button>
+
+
+
+    <script src="./DOM.js"></script>
+    <script src="./element.js"></script>
+    <script src="/modifyElement.js"></script>
+    <script src="./getSetAttribute.js"></script>
+    <script src="./addRemoveClass.js"></script>
+    <script src="./changeStyle.js"></script>
+    <script src="./createNewElement.js"></script>
+    <script src="./removeChild.js"></script>
+    <script src="./eventType.js"></script>
+    <script src="./eventObj&TargetProperty.js"></script>
+    <!-- <script>
+
+    function toggleHighlight(){
+        let box = document.getElementById("box")
+        box.classList.toggle("highlight")
+    }
+    </script> -->
+
+    
+
+
+    
 
 </body>
 </html>
