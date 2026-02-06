@@ -75,3 +75,22 @@ let result = document.getElementById('result');
 select.addEventListener("change", function(){
     result.innerText = select.value;
 });
+
+//Input:same thing of key event;
+const input3 = document.getElementById("myInput2");
+const result1 = document.getElementById("result1");
+
+input3.addEventListener("input", function(){
+    result1.innerText = input3.value
+});
+
+//Window Event;
+//load;
+window.addEventListener("load", function(){
+    console.log("Page Loaded");
+});
+
+//Scroll;
+window.addEventListener("scroll", function(){
+    console.log("Page scroll");
+});
