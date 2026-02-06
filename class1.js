@@ -33,7 +33,7 @@ console.log(calculator.mul());
 
 //JSON:JavaScript Object Notation, JSON need when we intarect with database;
 let student1 = {
-    name: "Abir",
+    name: "Abir",//key: "value";
     age: 20,
     subjects: ["TOC","WebTec","AddWeb"],
     "full name" : "Abir Hasan",
@@ -44,3 +44,16 @@ console.log(jsonString);
 //step-2;
 let parsedObject = JSON.parse(jsonString);
 console.log(parsedObject);
+
+//Converted to the array and also find out the keys;
+const keys = Object.keys(student1);
+console.log(keys);
+
+
+//Converted to the array and also find out the values;
+const values = Object.values(student1);
+console.log(values);
+
+//keys and value both axcess with array;
+const entries = Object.entries(student1);
+console.log(entries);
