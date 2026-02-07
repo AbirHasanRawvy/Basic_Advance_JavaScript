@@ -57,3 +57,21 @@ console.log(values);
 //keys and value both axcess with array;
 const entries = Object.entries(student1);
 console.log(entries);
+
+//for in: use for in for object ittaration ;
+for(let key in student){
+    console.log(student[key]);
+    console.log(key);
+};
+
+///Array;
+const numbers = [1, 2, 3, 4, 5];
+const friendNames = ["Tahfim", "Atik", "Ratul"];
+const myInfo = ["Abir", 25, ["CSE", "SE"]];
+
+console.log(typeof myInfo);
+console.log(numbers);
+console.log(numbers[1]);
+console.log(friendNames[2]);
+
+//Empty array;
