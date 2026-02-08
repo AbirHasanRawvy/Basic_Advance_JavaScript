@@ -121,3 +121,23 @@ console.log(colors2.includes("blue"));
 
 
 //Most important topic;
+const numbers2 = [1, 2, 3, 4, 5];
+
+
+//Map;
+
+
+
+
+//forEach: here work and end;
+const forEachNumber = numbers2.forEach((num) => {
+    const doubled = 2 * num;
+    return doubled;
+});
+console.log(forEachNumber);
+
+const mapEachNumber = numbers2.map((num) => {
+    const doubled1 = 2 * num;
+    return doubled1;
+});
+console.log(mapEachNumber);
