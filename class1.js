@@ -124,20 +124,19 @@ console.log(colors2.includes("blue"));
 const numbers2 = [1, 2, 3, 4, 5];
 
 
-//Map;
+//Map: return value;
+const mapEachNumber = numbers2.map((num) => {
+    const doubled1 = 2 * num;
+    return doubled1;
+});
+console.log(mapEachNumber);
 
 
 
-
-//forEach: here work and end;
+//forEach: here work and end. not work on outside;
 const forEachNumber = numbers2.forEach((num) => {
     const doubled = 2 * num;
     return doubled;
 });
 console.log(forEachNumber);
 
-const mapEachNumber = numbers2.map((num) => {
-    const doubled1 = 2 * num;
-    return doubled1;
-});
-console.log(mapEachNumber);
