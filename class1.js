@@ -75,3 +75,27 @@ console.log(numbers[1]);
 console.log(friendNames[2]);
 
 //Empty array;
+const emptyArray = new Array(5);
+console.log(emptyArray);
+
+const colors = new Array("red", "green", "blue");
+console.log(colors);
+
+//array methods;
+//push mehod: add from last;
+const colors1 = ["red", "geen", "blue"];
+colors1.push("pink");
+console.log(colors1);
+
+//ushift: first add the item;
+colors1.unshift("pink");
+console.log(colors1);
+
+//pop: remove from last;
+colors1.pop("pink");
+console.log(colors1);
+
+//shift: remove from first;
+colors1.shift("pink");
+console.log(colors1);
+
