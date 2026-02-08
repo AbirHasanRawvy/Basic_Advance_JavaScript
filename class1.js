@@ -99,3 +99,25 @@ console.log(colors1);
 colors1.shift("pink");
 console.log(colors1);
 
+//Slice: dirrectly not modify;
+const numbers1 = [1, 2, 3, 4, 5];
+const newnumbers1 = numbers1.slice(1,3);
+console.log(newnumbers1);
+
+//filtaring method;
+const evenNumbers = numbers1.filter((num) => num % 2 === 0 );
+console.log(evenNumbers);
+
+//find method: just show first number;
+const findEvenNumbers = numbers1.find((num) => num % 2 === 0 );
+console.log(findEvenNumbers);
+
+//indexof
+const colors2 = ["red", "blue", "yellow"];
+console.log(colors2.indexOf("blue"));
+
+//includes;
+console.log(colors2.includes("blue"));
+
+
+//Most important topic;
