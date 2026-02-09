@@ -140,3 +140,10 @@ const forEachNumber = numbers2.forEach((num) => {
 });
 console.log(forEachNumber);
 
+//forEach: here work and end. not work on outside;
+const forEachStringNumber = numbers2.map((num) => {
+    const stringDoubled = `${2 * num}`;
+    return stringDoubled;
+});
+console.log(forEachStringNumber);
+
