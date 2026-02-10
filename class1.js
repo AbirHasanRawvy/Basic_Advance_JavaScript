@@ -132,7 +132,6 @@ const mapEachNumber = numbers2.map((num) => {
 console.log(mapEachNumber);
 
 
-
 //forEach: here work and end. not work on outside;
 const forEachNumber = numbers2.forEach((num) => {
     const doubled = 2 * num;
@@ -146,4 +145,12 @@ const forEachStringNumber = numbers2.map((num) => {
     return stringDoubled;
 });
 console.log(forEachStringNumber);
+
+//Sum with reduce;
+const sum = numbers2.reduce((acc, curr)=> acc + curr, 0);
+console.log(sum);
+
+//Splice;
+
+///String;
 
