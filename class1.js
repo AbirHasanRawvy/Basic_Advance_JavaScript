@@ -153,4 +153,59 @@ console.log(sum);
 //Splice;
 
 ///String;
+//template string;
+let fName = "Abir";
+let lName = "Hasan";
 
+let fullName = `${fName} ${lName}`;
+console.log(fullName);
+
+//Date;
+let now = new Date();
+console.log(now);
+
+let now1 = new Date("2014-02-11");
+console.log(now1);
+
+let now2 = new Date();
+console.log(now1.getFullYear);
+
+//Math Object;
+console.log(Math.PI);
+
+console.log(Math.E);
+
+console.log(Math.round(4.1));//4
+
+console.log(Math.floor(4.1));//4
+
+console.log(Math.ceil(4.1));//5
+
+console.log(Math.max(4, 3, 1, 5));//5
+
+console.log(Math.min(4, 3, 1, 5));//1
+
+console.log(Math.pow(2, 3));//8
+
+console.log(Math.random());
+
+let N = 3.5521;
+console.log(N.toString());
+
+console.log(N.toFixed(2));//2room;
+
+//Window object;
+// window.alert("kichu ekta");
+console.log(window);
+
+//Navigator Object;
+console.log(navigator.platform);
+
+//AppName: Broweser Name;
+console.log(navigator.appName);
+
+//Geo location;
+// console.log(navigator.geolocation.getCurrentPosition());
+
+//userAgent;
+console.log(navigator.userAgent);
