@@ -47,3 +47,15 @@ myButton.addEventListener("click", function () {
     title.style.backgroundColor = "yellow";
 });//all the event listen;
 console.log(myButton);
+
+//input took with submit button;
+const myForm = document.getElementById("myForm");
+const inputFied = document.getElementById("inputFied");
+// console.log(inputFied.value);
+
+myForm.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+    console.log(e.target.inputFied.value);
+    alert("Form Submited");
+});
