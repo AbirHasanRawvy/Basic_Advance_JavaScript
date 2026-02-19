@@ -59,3 +59,14 @@ myForm.addEventListener("submit", function(e) {
     console.log(e.target.inputFied.value);
     alert("Form Submited");
 });
+
+//create a p tag with dynamically;
+const rootDiv = document.getElementById("rootDiv");
+const p = document.createElement("p");
+// console.log(p);
+
+rootDiv.appendChild(p);//appendChild: add the child or input the child;
+p.setAttribute("id", "newPTag");
+p.textContent = "This is a new paragraph created by JS!";
+console.log(rootDiv);
+// rootDiv.removeChild(p);
