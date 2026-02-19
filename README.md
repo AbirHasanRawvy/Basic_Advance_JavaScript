@@ -1,6 +1,6 @@
 # Basic_Advance_JavaScript
 Try to learn advance topic of the javaScript.<br> 
-JavaScript Object & JSON | Arrays and Array Methods | Strings and String Operations | JavaScript Date | Math | Number | Window object | Navigator object<br>
+JavaScript Object & JSON | Arrays and Array Methods | Strings and String Operations | JavaScript Date | Math | Number | Window object | Navigator object | JavaScript events | JavaScript DOM in detail | DOM HTML elements | DOM manipulation | Form handling | DOM element creation | Appending elements | Query selector<br>
 # Getting Started
 First run the developement server: From index.html click on Open With Live Server<br>
 Open: http : (http://127.0.0.1:5500/index9.html), (http://127.0.0.1:5500/index92.html), (http://127.0.0.1:5500/index91.html) with your browser and go to the console part to see the result.<br>
